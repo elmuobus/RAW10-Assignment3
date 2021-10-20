@@ -1,0 +1,16 @@
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.exe
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.deps.json
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.runtimeconfig.json
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.runtimeconfig.dev.json
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.dll
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\ref\Assignment3.dll
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\bin\Debug\net5.0\Assignment3.pdb
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.csproj.AssemblyReference.cache
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.AssemblyInfoInputs.cache
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.AssemblyInfo.cs
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.csproj.CoreCompileInputs.cache
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.dll
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\ref\Assignment3.dll
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.pdb
+D:\Cours RUC\RAWDATA\Test\Assignment3\Assignment3\obj\Debug\net5.0\Assignment3.genruntimeconfig.cache
