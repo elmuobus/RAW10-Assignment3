@@ -1,48 +1,95 @@
-﻿// RAW10 - DELEBECQUE Alexis, DUMONT-ROTY Loïc, SHOWIKI Ali Isac
-using System;
+#nullable enable
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 
 namespace Assignment3
 {
     public class Server
     {
-        private IPAddress _ipAddress = Dns.Resolve("localhost").AddressList[0];
-        private int _port = 5000;
-
-        public void startServer()
+        private readonly TcpListener _server;
+        public Server(int port)
         {
-            var server = new TcpListener(_ipAddress, _port);
-            var buffer = new byte[1024];
+            _server = new TcpListener(IPAddress.Any, port);
+            _server.Start();
+            ListenClients();
+        }
+
+        private string AllMissingRequestElementWithMethod(Request request)
+        {
+            List<string> result = new(){ReturnStatus.MissingBody};
+
+            if (request.Date == null)
+                result.Add(ReturnStatus.MissingDate);
+            if (request.Path == null)
+                result.Add(ReturnStatus.MissingPath);
+            if (request.Body == null)
+                result.Add(ReturnStatus.MissingBody);
             
-            server.Start();
-            Console.WriteLine("[INFO] - Server started");
-            try
+            return result.Count > 0 ? $"4 {string.Join(", ", result)}" : "";
+        }
+
+        private void ManageOneClient(object? obj)
+        {
+            var clientStream = (NetworkStream)obj!;
+            var request = Utils.ReadRequest(clientStream);
+            AMethod? method = null;
+            var response = new Response()
             {
-                while (true)
+                Status = "",
+                Body = null,
+            };
+
+            if (request == null)
+                return;
+            if (request.Method == null)
+            {
+                response.Status = AllMissingRequestElementWithMethod(request);
+            }
+            else
+            {
+                switch (request.Method)
                 {
-                    Console.WriteLine("[INFO] - Waiting for a connection...");
-                    var client = server.AcceptTcpClient();
-                    Console.WriteLine($"[INFO] - Client {client} accepted");
-                    var stream = client.GetStream();
-                    var rdCnt = stream.Read(buffer);
-                    var msg = Encoding.UTF8.GetString(buffer, 0, rdCnt);
-                    Console.WriteLine($"[INFO] - Client {client} message: '{msg}'");
-                    var response = Encoding.UTF8.GetBytes(msg.ToUpper());
-                    stream.Write(response);
-                    stream.Close();
-                    client.Close();
+                    case "create":
+                        method = new Create(request);
+                        break;
+                    case "read":
+                        method = new Read(request);
+                        break;
+                    case "update":
+                        method = new Update(request);
+                        break;
+                    case "delete":
+                        method = new Delete(request);
+                        break;
+                    case "echo":
+                        method = new Echo(request);
+                        break;
+                    default:
+                        response.Status = $"4 {ReturnStatus.IllegalMethod}";
+                        break;
                 }
             }
-            catch (SocketException e)
+            
+            method?.Launch();
+            var newResponse = method?.Response();
+            if (newResponse != null) response = newResponse;
+
+            var msg = Encoding.UTF8.GetBytes(Utils.ToJson(response)); 
+            clientStream.Write(msg, 0, msg.Length);
+        }
+
+        private void ListenClients()
+        {
+            while (true)
             {
-                Console.WriteLine($"Socket Exception error: {e}");
-            }
-            finally
-            {
-                server.Stop();
-                Console.WriteLine("[INFO] - Server stopped");
+                var client = _server.AcceptTcpClient();
+                var clientStream = client.GetStream();
+                
+                Thread t = new(ManageOneClient);
+                t.Start(clientStream);
             }
         }
     }

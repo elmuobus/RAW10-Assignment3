@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\vulka\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\vulka\\.nuget\\packages"
+      "/home/adelebecque/.dotnet/store/|arch|/|tfm|",
+      "/home/adelebecque/.nuget/packages"
     ]
   }
 }
