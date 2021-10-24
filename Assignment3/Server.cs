@@ -19,7 +19,7 @@ namespace Assignment3
 
         private string AllMissingRequestElementWithMethod(Request request)
         {
-            List<string> result = new(){ReturnStatus.MissingBody};
+            List<string> result = new(){ReturnStatus.MissingMethod};
 
             if (request.Date == null)
                 result.Add(ReturnStatus.MissingDate);

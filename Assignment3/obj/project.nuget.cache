@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LoWb6ZsZ+cnwIrEuzNGdYgEvZroEc+EUgyQzanp/iRw0sCH5J69fcs2wSthIwzh+61Jv6cLTPsAklnN16jUWwg==",
+  "dgSpecHash": "jqpPoFQ7V0OCYhnICEG9oR8EgU9OqssHehKUYQ3Dhnvk9UrHtbUuLtgAIR8DbAQTLngUY0xpgvsRN1KBBtl4yA==",
   "success": true,
-  "projectFilePath": "/home/adelebecque/RiderProjects/Assignment3/Assignment3/Assignment3.csproj",
+  "projectFilePath": "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/Assignment3.csproj",
   "expectedPackageFiles": [
     "/home/adelebecque/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/home/adelebecque/.nuget/packages/microsoft.netcore.platforms/1.0.1/microsoft.netcore.platforms.1.0.1.nupkg.sha512",

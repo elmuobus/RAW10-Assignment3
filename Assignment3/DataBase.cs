@@ -56,7 +56,7 @@ namespace Assignment3
             {
                 return _data[cid - 1];
             }
-            catch (ArgumentOutOfRangeException e)
+            catch (ArgumentOutOfRangeException)
             {
                 return null;
             }
@@ -67,11 +67,11 @@ namespace Assignment3
             try 
             { 
                 _data[cid - 1] = newCategory; 
-                return "3 Updated";
+                return ReturnStatus.Updated;
             }
-            catch (ArgumentOutOfRangeException e) 
+            catch (ArgumentOutOfRangeException) 
             { 
-                return "5 Not Found";
+                return ReturnStatus.NotFound;
             }
         }
         
@@ -80,11 +80,11 @@ namespace Assignment3
             try 
             { 
                 _data.RemoveAt(cid - 1); 
-                return "1 Ok";
+                return ReturnStatus.Ok;
             }
-            catch (ArgumentOutOfRangeException e) 
+            catch (ArgumentOutOfRangeException) 
             { 
-                return "5 Not Found";
+                return ReturnStatus.NotFound;
             }
         }
     }
