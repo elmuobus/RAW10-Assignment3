@@ -1,0 +1,31 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06879e90_002De795_002D4892_002D9069_002D15651f110778/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Request_ReadCategoryWithValidId_StatusOkAndCategoryInBody" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5096c08f_002Df0aa_002D44ff_002Db9a9_002D1c553e085b43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Constraint_RequestWithUnknownMethod_IllegalMethodError #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Constraint_RequestWithUnknownMethod_IllegalMethodError&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Constraint_RequestWithoutMethod_MissingMethodError&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Request_DeleteCategoryWithInvalidId_StatusNotFound&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Echo_RequestWithBody_ReturnsBody&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Constraint_RequestWithoutDate_MissingDateError&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cd1104a3_002D5849_002D46be_002D9c9b_002D22b4a0a7e87c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Constraint_RequestWithoutMethod_MissingMethodError" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests.Constraint_RequestWithUnknownMethod_IllegalMethodError&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d2d8bb62_002Df807_002D439c_002D8bd4_002D6a6bd6af5fb9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Assignment3Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e2bf4df1_002Dd6ef_002D47d4_002Da3fa_002D3f6e815d6c47/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Constraint_RequestWithUnknownMethod_IllegalMethodError" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::786EAB0B-9C83-44D2-9BE3-808AB198817E::net5.0::Assignment3TestSuite.Assignment3Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
