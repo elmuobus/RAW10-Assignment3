@@ -1,24 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cours RUC\\RAWDATA\\Test\\Assignment3\\Assignment3\\Assignment3.csproj": {}
+    "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/Assignment3.csproj": {}
   },
   "projects": {
-    "D:\\Cours RUC\\RAWDATA\\Test\\Assignment3\\Assignment3\\Assignment3.csproj": {
+    "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/Assignment3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cours RUC\\RAWDATA\\Test\\Assignment3\\Assignment3\\Assignment3.csproj",
+        "projectUniqueName": "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/Assignment3.csproj",
         "projectName": "Assignment3",
-        "projectPath": "D:\\Cours RUC\\RAWDATA\\Test\\Assignment3\\Assignment3\\Assignment3.csproj",
-        "packagesPath": "C:\\Users\\vulka\\.nuget\\packages\\",
-        "outputPath": "D:\\Cours RUC\\RAWDATA\\Test\\Assignment3\\Assignment3\\obj\\",
+        "projectPath": "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/Assignment3.csproj",
+        "packagesPath": "/home/adelebecque/.nuget/packages/",
+        "outputPath": "/home/adelebecque/Project4/RAW10-Assignment3/Assignment3/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vulka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/adelebecque/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
@@ -34,6 +37,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\vulka\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
